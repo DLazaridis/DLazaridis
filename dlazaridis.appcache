@@ -1,0 +1,35 @@
+CACHE MANIFEST
+
+#version 1.0 6-26-2015
+
+CACHE:
+
+#images
+http://dlazaridis.github.io/img/avatar4.png
+http://dlazaridis.github.io/img/parallax1.png
+http://dlazaridis.github.io/img/project1.jpg
+http://dlazaridis.github.io/img/project2.jpg
+http://dlazaridis.github.io/img/project3.png
+http://dlazaridis.github.io/img/project4.jpg
+http://dlazaridis.github.io/img/project5.png
+http://dlazaridis.github.io/img/project6.jpg
+
+#internal HTML documents
+http://dlazaridis.github.io/
+
+#style sheets
+http://dlazaridis.github.io/css/font-awesome.min.css
+http://dlazaridis.github.io/css/materialize.min.css
+http://dlazaridis.github.io/css/style.min.css
+
+#style sheet images
+http://dlazaridis.github.io/img/status.gif
+
+#javascript files
+http://dlazaridis.github.io/js/modernizr.js
+https://code.jquery.com/jquery-2.1.1.min.js
+http://dlazaridis.github.io/js/materialize.min.js
+http://dlazaridis.github.io/js/init.min.js
+
+NETWORK:
+*
