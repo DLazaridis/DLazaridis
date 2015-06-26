@@ -1,17 +1,11 @@
 CACHE MANIFEST
 # 2015-06-26:v.1.0.0
 
-# Explicitly cached 'master entries'.
 CACHE:
 index.html
 css/font-awesome.min.css
 css/materialize.min.css
 css/style.min.css
-font/*
-fonts/*
-img/*
-js/*
 
-# Resources that require the user to be online.
 NETWORK:
 *
