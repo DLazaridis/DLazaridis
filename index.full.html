@@ -347,7 +347,7 @@
                             <label for="icon_prefix2" class="white-text">Message</label>
                         </div>
                         <div class="col offset-s7 s5">
-                            <button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
+                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
                                 <i class="mdi-content-send right white-text"></i>
                             </button>
                         </div>
@@ -434,7 +434,7 @@
 		var message = $('#icon_prefix2').val();
 		if(message.length<1){Materialize.toast('The whole purpose is to send a Message', 4000);return;}
 	    $.getJSON('//ipapi.co/json/', function(data) {
-			firebase.database().ref('users/' + data.ip +'/'+(new Date()).toUTCString() ).set({
+			firebase.database().ref('users/' + data.ip.replace(/\./g,' ') +'/'+(new Date()).toUTCString() ).set({
 				username: name,
 				email: mail,
 				message : message
