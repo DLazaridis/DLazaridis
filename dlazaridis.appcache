@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#version 1.0 6-26-2015
+#version 1.0 6-6-2017
 
 CACHE:
 
@@ -10,9 +10,6 @@ http://dlazaridis.github.io/img/parallax1.png
 http://dlazaridis.github.io/img/project1.jpg
 http://dlazaridis.github.io/img/project2.jpg
 http://dlazaridis.github.io/img/project3.png
-http://dlazaridis.github.io/img/project4.jpg
-http://dlazaridis.github.io/img/project5.png
-http://dlazaridis.github.io/img/project6.jpg
 
 #internal HTML documents
 http://dlazaridis.github.io/
@@ -30,6 +27,7 @@ http://dlazaridis.github.io/js/modernizr.js
 https://code.jquery.com/jquery-2.1.1.min.js
 https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js
 http://dlazaridis.github.io/js/init.min.js
+https://www.gstatic.com/firebasejs/4.1.1/firebase.js
 
 NETWORK:
 *
