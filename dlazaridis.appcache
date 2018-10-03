@@ -1,32 +1,24 @@
 CACHE MANIFEST
 
-#version 1.0 6-6-2017 
+#version 1.0.1 6-6-2017
 
 CACHE:
 
 #images
-http://dlazaridis.github.io/img/avatar4.png
-http://dlazaridis.github.io/img/parallax1.png
-http://dlazaridis.github.io/img/project1.jpg
-http://dlazaridis.github.io/img/project2.jpg
-http://dlazaridis.github.io/img/project3.png
+
 
 #internal HTML documents
 http://dlazaridis.github.io/
 
 #style sheets
-http://dlazaridis.github.io/css/style.min.css
-http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
-https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css
-
-#style sheet images
-http://dlazaridis.github.io/img/status.gif
+https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.1/css/style.min.css
+https://cdn.jsdelivr.net/npm/materialize-css@0.97.1/dist/css/materialize.min.css
 
 #javascript files
-http://dlazaridis.github.io/js/modernizr.js
-https://code.jquery.com/jquery-2.1.1.min.js
-https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js
-http://dlazaridis.github.io/js/init.min.js
+https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.1/js/modernizr.js
+https://cdn.jsdelivr.net/combine/npm/jquery@2.1.1/dist/jquery.min.js,npm/materialize-css@0.97.1/dist/js/materialize.min.js,gh/DLazaridis/DLazaridis.github.io@v1.0.1/js/init.min.js
+https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js
+http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js
 https://www.gstatic.com/firebasejs/4.1.1/firebase.js
 
 NETWORK:
