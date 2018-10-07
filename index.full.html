@@ -437,18 +437,17 @@
     </script>
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@2.1.1/dist/jquery.min.js,npm/materialize-css@0.97.1/dist/js/materialize.min.js,gh/DLazaridis/DLazaridis.github.io@v1.0.1/js/init.min.js,npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
     </body>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-64671024-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-	<script>
-	  $("form").submit(function(event) {
-		Materialize.toast('Thank you for your feedback', 4000);
-		$('#icon_prefix,#icon_email,#icon_prefix2').val('');
-	  });
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114661389-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-114661389-2');
+
+        $("form").submit(function(event) {
+            Materialize.toast('Thank you for your feedback', 4000);
+            $('#icon_prefix,#icon_email,#icon_prefix2').val('');
+        });
 	</script>
 </html> 
