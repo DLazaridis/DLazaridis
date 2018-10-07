@@ -429,18 +429,13 @@
 </footer>
 
     <!--  Scripts-->
-    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@2.1.1/dist/jquery.min.js,npm/materialize-css@0.97.1/dist/js/materialize.min.js,gh/DLazaridis/DLazaridis.github.io@v1.0.1/js/init.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>-->
-    <!--<script src="js/init.min.js"></script>-->
-
     <script>
         window.lazyLoadOptions = {
             threshold: 0,
             elements_selector: ".lazy"
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@2.1.1/dist/jquery.min.js,npm/materialize-css@0.97.1/dist/js/materialize.min.js,gh/DLazaridis/DLazaridis.github.io@v1.0.1/js/init.min.js,npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
     </body>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -450,19 +445,7 @@
 	  ga('create', 'UA-64671024-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-	<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[4]='MMERGE4';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 	<script>
-	  var config = {
-		apiKey: "AIzaSyA1UcEe2khde5O1-0Oj-kkMYQTZQf0fx2Q",
-		authDomain: "website-7a3aa.firebaseapp.com",
-		databaseURL: "https://website-7a3aa.firebaseio.com",
-		projectId: "website-7a3aa",
-		storageBucket: "website-7a3aa.appspot.com",
-		messagingSenderId: "987962599449"
-	  };
-	  firebase.initializeApp(config);
 	  $("form").submit(function(event) {
 		Materialize.toast('Thank you for your feedback', 4000);
 		$('#icon_prefix,#icon_email,#icon_prefix2').val('');
