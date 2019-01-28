@@ -351,27 +351,25 @@
     <div class="container">  
         <div class="row">
             <div class="col l6 s12">
-                <form class="col s12" action="https://github.us17.list-manage.com/subscribe/post?u=ea84b438f8506fa3e960fdecd&amp;id=756faf4caf" method="post" target="_blank">
-					<input type="hidden" name="b_ea84b438f8506fa3e960fdecd_756faf4caf" tabindex="-1" value="">
+                <form class="col s12" method="post">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix white-text"></i>
-                            <input id="icon_prefix" type="text" class="validate white-text" name="FNAME">
+                            <input id="icon_prefix" type="text" class="validate white-text" name="name">
                             <label for="icon_prefix" class="white-text">Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-communication-email prefix white-text"></i>
-                            <input id="icon_email" type="email" class="validate white-text" name="EMAIL">
+                            <input id="icon_email" type="email" class="validate white-text" name="email">
                             <label for="icon_email" class="white-text">Email</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="mdi-editor-mode-edit prefix white-text"></i>
-                            <textarea id="icon_prefix2" class="materialize-textarea white-text" name="MMERGE4"></textarea>
+                            <textarea id="icon_prefix2" class="materialize-textarea white-text" name="message"></textarea>
                             <label for="icon_prefix2" class="white-text">Message</label>
                         </div>
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ea84b438f8506fa3e960fdecd_756faf4caf" tabindex="-1" value=""></div>
                         <div class="col offset-s7 s5">
-                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                            <button class="btn waves-effect waves-light red darken-1" type="submit">Send
                                 <i class="mdi-content-send right white-text"></i>
                             </button>
                         </div>
@@ -435,7 +433,7 @@
             elements_selector: ".lazy"
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@2.1.1/dist/jquery.min.js,npm/materialize-css@0.97.1/dist/js/materialize.min.js,gh/DLazaridis/DLazaridis.github.io@v1.0.2/js/init.min.js,npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/emailjs-com@2.3.2/dist/email.min.js,npm/jquery@2.1.1/dist/jquery.min.js,npm/materialize-css@0.97.1/dist/js/materialize.min.js,gh/DLazaridis/DLazaridis.github.io@v1.0.2/js/init.min.js,npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
     </body>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114661389-2"></script>
@@ -445,9 +443,24 @@
         gtag('js', new Date());
         gtag('config', 'UA-114661389-2');
 
-        $("form").submit(function(event) {
-            Materialize.toast('Thank you for your feedback', 4000);
-            $('#icon_prefix,#icon_email,#icon_prefix2').val('');
+        (function(){
+            emailjs.init("user_BZqXZnF0PrhR7UQhGFnog");
+        })();
+
+        var form = $("form");
+        form.submit(function(event){
+            event.preventDefault();
+            form.find("button").text("Sending...");
+            emailjs.sendForm("default_service","template_QmY5ND02",form[0])
+                .then(function(){
+                    Materialize.toast('Thank you for your feedback', 4000);
+                    $('#icon_prefix,#icon_email,#icon_prefix2').val('');
+                    form.find("button").text("Send");
+                }, function(err) {
+                    Materialize.toast("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                    form.find("button").text("Send");
+                });
+            return false;
         });
 	</script>
 </html> 
