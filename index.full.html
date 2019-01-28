@@ -448,17 +448,18 @@
         })();
 
         var form = $("form");
+        var button = form.find("button");
         form.submit(function(event){
             event.preventDefault();
-            form.find("button").text("Sending...");
+            button[0].childNodes[0].nodeValue="Sending...";
             emailjs.sendForm("default_service","template_QmY5ND02",form[0])
                 .then(function(){
                     Materialize.toast('Thank you for your feedback', 4000);
                     $('#icon_prefix,#icon_email,#icon_prefix2').val('');
-                    form.find("button").text("Send");
+                    button[0].childNodes[0].nodeValue="Send";
                 }, function(err) {
                     Materialize.toast("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-                    form.find("button").text("Send");
+                    button[0].childNodes[0].nodeValue="Send";
                 });
             return false;
         });
