@@ -1,4 +1,4 @@
 # DLazaridis.github.io
 
-Dimitrios Lazaridis Portofolio
+Dimitrios Lazaridis Portfolio
 http://dlazaridis.github.io/
