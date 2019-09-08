@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?12067330');
-  src: url('../font/fontello.eot?12067330#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?12067330') format('woff2'),
-       url('../font/fontello.woff?12067330') format('woff'),
-       url('../font/fontello.ttf?12067330') format('truetype'),
-       url('../font/fontello.svg?12067330#fontello') format('svg');
+  src: url('https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/font/fontello.eot?12067330');
+  src: url('https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/font/fontello.eot?12067330#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/font/fontello.woff2?12067330') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/font/fontello.woff?12067330') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/font/fontello.ttf?12067330') format('truetype'),
+       url('https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/font/fontello.svg?12067330#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
