@@ -1,0 +1,36 @@
+{"dir" : "ltr",
+    "lang" : "English",
+    "name" : "Dimitrios Lazaridis",
+    "scope" : "/",
+    "display" : "browser",
+    "start_url" : "https://dlazaridis.github.io/",
+    "short_name" : "DLazaridis",
+    "theme_color" : "#2196F3",
+    "description" : "Personal Website of Dimitrios Lazaridis.",
+    "orientation" : "any",
+    "background_color" : "transparent",
+    "related_applications" : "",
+    "prefer_related_applications" : "false",
+    "generated" : "true",
+    "icons" : [
+        {
+            "src": "https://dlazaridis.github.io/favicon.ico",
+            "sizes": "48x48 32x32 16x16"
+        },
+        {
+            "src": "https://dlazaridis.github.io/mstile-150x150.png",
+            "sizes": "150x150"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/apple-touch-icon.png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/favicon-32x32.png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/DLazaridis/DLazaridis.github.io@v1.0.3/favicon-16x16.png",
+            "sizes": "16x16"
+        }
+    ]}
